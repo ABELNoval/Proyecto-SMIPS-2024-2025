@@ -40,7 +40,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit31" val="0"/>
     </tool>
     <tool name="Pin">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Jump"/>
     </tool>
@@ -8851,6 +8851,61 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="Jump Destiny"/>
       <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+  </circuit>
+  <circuit name="Program Counter">
+    <a name="circuit" val="Program Counter"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(160,110)" to="(160,160)"/>
+    <wire from="(160,110)" to="(190,110)"/>
+    <wire from="(200,120)" to="(200,140)"/>
+    <wire from="(210,120)" to="(210,130)"/>
+    <wire from="(220,100)" to="(260,100)"/>
+    <wire from="(140,100)" to="(190,100)"/>
+    <wire from="(230,130)" to="(230,160)"/>
+    <wire from="(210,130)" to="(230,130)"/>
+    <comp lib="0" loc="(160,160)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enabled"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="4" loc="(220,100)" name="Register">
+      <a name="width" val="32"/>
+      <a name="label" val="Program Counter"/>
+      <a name="labelfont" val="SansSerif bold 10"/>
+    </comp>
+    <comp lib="0" loc="(230,160)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(200,140)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
+      <a name="labelloc" val="south"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(140,100)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Branch Control"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(260,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Instruction"/>
+      <a name="labelloc" val="north"/>
+      <a name="labelfont" val="SansSerif bold 14"/>
     </comp>
   </circuit>
 </project>
